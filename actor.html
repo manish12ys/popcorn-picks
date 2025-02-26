@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Review App - Tier 1 Heroes</title>
+    <link rel="stylesheet" href="style4.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        
+
+        .nav-bar form {
+            display: flex;
+            align-items: center;
+        }
+
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        
+        h1 {
+            margin-top: 2rem;
+            color: #333;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        
+        .hero-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        
+        .hero-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-card img {
+            width: 100%;
+            border-radius: 8px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .hero-card h2 {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #222;
+        }
+
+        .hero-card p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        
+        .hero-card a {
+            background: #ff9800;
+            color: white;
+            padding: 0.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .hero-card a:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+ 
+    <nav class="nav-bar">
+        <div class="dropdown">
+            <button class="dropdown-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="mainpage">Home</a>
+                <a href="actor">Actors</a>
+                <a href="top_pics">Top Rated</a>
+               
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+        <div style="color: white;">popcorn pictures</div>
+
+        
+        
+    </nav>
+
+    <h1>Present Tier 1 Heroes of TFI</h1>
+    <div class="hero-container">
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Mahesh_Babu_in_Spyder_%28cropped%29.jpg/330px-Mahesh_Babu_in_Spyder_%28cropped%29.jpg" alt="Mahesh Babu">
+            <h2>1. Mahesh Babu</h2>
+            <p><b>Notable Films:</b> Srimanthudu, Bharat Ane Nenu, Sarkaru Vaari Paata</p>
+            <a href="https://www.imdb.com/name/nm1121870/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/The_noted_Telugu_film_actor_Shri_Pavan_Kalyan_addressing_at_the_closing_ceremony_and_award_function_of_the_18th_International_Children%E2%80%99s_Film_Festival_India%2C_in_Hyderabad_on_November_20%2C_2013_%28cropped%29.jpg/306px-thumbnail.jpg" alt="Pawan Kalyan">
+            <h2>2. Pawan Kalyan</h2>
+            <p><b>Notable Films:</b> Vakeel Saab, Bheemla Nayak, Gabbar Singh</p>
+            <a href="https://www.imdb.com/name/nm0436302/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/N._T._Rama_Rao_Jr._in_2021.jpg/330px-N._T._Rama_Rao_Jr._in_2021.jpg" alt="NTR Jr.">
+            <h2>3. NTR Jr.</h2>
+            <p><b>Notable Films:</b> Janatha Garage, Aravinda Sametha, RRR</p>
+            <a href="https://www.imdb.com/name/nm1694524/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ram_Charan_2024_%28cropped%29.jpg/330px-Ram_Charan_2024_%28cropped%29.jpg" alt="Ram Charan">
+            <h2>4. Ram Charan</h2>
+            <p><b>Notable Films:</b> Magadheera, Rangasthalam, RRR</p>
+            <a href="https://www.imdb.com/name/nm2776304/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Allu_Arjun_at_Pushpa_2_The_Rule_meet.jpg/330px-Allu_Arjun_at_Pushpa_2_The_Rule_meet.jpg" alt="Allu Arjun">
+            <h2>5. Allu Arjun</h2>
+            <p><b>Notable Films:</b> Ala Vaikunthapurramuloo, Pushpa, Sarrainodu</p>
+            <a href="https://www.imdb.com/name/nm1084853/" target="_blank">Learn More</a>
+        </div>
+
+        <div class="hero-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Prabhas_at_Saaho_Pre_release_event_%28cropped%29.jpg/330px-Prabhas_at_Saaho_Pre_release_event_%28cropped%29.jpg" alt="Prabhas">
+            <h2>6. Prabhas</h2>
+            <p><b>Notable Films:</b> Baahubali, Saaho, Radhe Shyam</p>
+            <a href="https://www.imdb.com/name/nm1659141/" target="_blank">Learn More</a>
+        </div>
+    </div>
+
+</body>
+</html>

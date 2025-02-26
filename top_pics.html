@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Telugu Movies</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+       
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+}
+
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+form {
+    display: flex;
+    align-items: center;
+}
+
+form input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-right: 5px;
+    border: none;
+    width: 200px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #e68900;
+}
+
+
+h1 {
+    margin-top: 2rem;
+    color: #333;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.movie-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.movie-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+}
+
+.movie-card img {
+    width: 90%;
+    height: 300px;
+    border-radius: 8px;
+    
+    object-fit: cover;
+}
+
+.movie-card h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #222;
+}
+
+.movie-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.movie-card a {
+    background: #ff9800;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.movie-card a:hover {
+    background: #e68900;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    
+    <nav class="nav-bar">
+        <div class="dropdown">
+            <button class="dropdown-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="mainpage">Home</a>
+                <a href="actor">Actors</a>
+                <a href="top_pics">Top Rated</a>
+               
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+        <div class="brand-name">popcorn pictures</div>
+        
+    </nav>
+
+ 
+    <h1>Top Rated Telugu Movies</h1>
+    <div class="movie-cards-container">
+  
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg" alt="RRR">
+            <h2>RRR</h2>
+            <p><b>Directed by:</b> S. S. Rajamouli</p>
+            <a href="https://www.imdb.com/title/tt8178634/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/93/Baahubali_2_The_Conclusion_poster.jpg" alt="Baahubali 2">
+            <h2>Baahubali 2: The Conclusion</h2>
+            <p><b>Directed by:</b> S. S. Rajamouli</p>
+            <a href="https://www.imdb.com/title/tt4849438/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Jersey_2019_poster.jpg" alt="Jersey">
+            <h2>Jersey</h2>
+            <p><b>Directed by:</b> Gowtam Tinnanuri</p>
+            <a href="https://www.imdb.com/title/tt8948790/reviews/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzA0MzYxYjctOTg3Ny00ZTg0LTkxYTMtOTY1MDg5N2M1MjkyXkEyXkFqcGc@._V1_.jpg" alt="Vikramarkudu">
+            <h2>Vikramarkudu</h2>
+            <p><b>Directed by:</b> S. S. Rajamouli</p>
+            <a href="https://www.imdb.com/title/tt0858492/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Eega_poster.jpg" alt="Eega">
+            <h2>Eega</h2>
+            <p><b>Directed by:</b> S. S. Rajamouli</p>
+            <a href="https://www.imdb.com/title/tt2258337/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Arjun_Reddy.jpg" alt="Arjun Reddy">
+            <h2>Arjun Reddy</h2>
+            <p><b>Directed by:</b> Sandeep Reddy Vanga</p>
+            <a href="https://www.imdb.com/title/tt7294534/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ec/Samara_Simha_Reddy.jpg" alt="Samarasimha Reddy">
+            <h2>Samarasimha Reddy</h2>
+            <p><b>Directed by:</b> B. Gopal</p>
+            <a href="https://www.imdb.com/title/tt1575672/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRokG1KdKg-J3ugR2gqcScRxwHdHQqZTq8-CV0BlUiv-K-kvipCrK_hpH781zQlD4GEylO" alt="Indra">
+            <h2>Indra</h2>
+            <p><b>Directed by:</b> B. Gopal</p>
+            <a href="https://www.imdb.com/title/tt0319557/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMWJiZDVkODktZDM2ZS00NzE4LTlhOTEtYzRkYmYyODY4ZmQ2XkEyXkFqcGc@._V1_.jpg" alt="Seethamma Vakitlo Sirimalle Chettu">
+            <h2>Seethamma Vakitlo Sirimalle Chettu</h2>
+            <p><b>Directed by:</b> Srikanth Addala</p>
+            <a href="https://www.imdb.com/title/tt2198161/" class="review-link">Read Reviews</a>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://images.justwatch.com/poster/308521848/s718/manmadhudu.jpg" alt="Manmadhudu">
+            <h2>Manmadhudu</h2>
+            <p><b>Directed by:</b> K. Vijaya Bhaskar</p>
+            <a href="https://www.imdb.com/title/tt0355742/" class="review-link">Read Reviews</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review App</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: white;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+}
+
+form input {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background: #ff9800;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #e68900;
+}
+.nav-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: #333;
+            }
+    
+            .nav-bar form {
+                display: flex;
+                align-items: center;
+            }
+.dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+h1 {
+    margin-top: 1.5rem;
+    color: #333;
+}
+
+
+.movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+}
+
+
+.movie {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie h2 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-top: 10px;
+}
+
+.movie p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+
+.movie a {
+    display: block;
+    text-align: center;
+    background: #ff9800;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.movie a:hover {
+    background: #e68900;
+}
+
+    </style>
+</head>
+<body>
+
+   
+    <nav class="nav-bar">
+        <div class="dropdown">
+            <button class="dropdown-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="mainpage">Home</a>
+                <a href="actor">Actors</a>
+                <a href="top_pics">Top Rated</a>
+               
+                <a href="logout">Logout</a>
+            </div>
+        </div>
+    
+        <span class="brand">popcorn pictures</span>
+       
+    </nav>
+
+    
+    
+    <h1>Recent Movies</h1>
+    <div class="movies">
+        <div class="movie">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Daaku_Maharaaj_film_poster.jpg" alt="Daaku Maharaaj">
+            <h2>Daaku Maharaaj</h2>
+            <p><b>Director:</b> Bobby Kolli</p>
+            <p><b>Starring:</b> Nandamuri Balakrishna, Bobby Deol, Pragya Jaiswal, Urvashi Rautela, Shraddha Srinath</p>
+            <p><b>Music by:</b> Thaman S</p>
+            <a href="dhaku">Read Reviews</a>
+        </div>
+
+        <div class="movie">
+            
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Sankranthiki_Vasthunnam_Release_Date%282%29.jpg/330px-Sankranthiki_Vasthunnam_Release_Date%282%29.jpg" alt="Movie Poster"/>
+
+            <h2>Sankranthiki Vasthunam</h2>
+            <p><b>Director:</b> Anil Ravipudi</p>
+            <p><b>Starring:</b> Venkatesh, Meenakshi Chaudhary, Aishwarya Rajesh</p>
+            <p><b>Music by:</b> Bheems Ceciroleo</p>
+            <a href="san">Read Reviews</a>
+        </div>
+
+        <div class="movie">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Movie Poster"/>
+            <h2>Game Changer</h2>
+            <p><b>Director:</b> S. Shankar</p>
+            <p><b>Starring:</b> Ram Charan, Kiara Advani, Anjali, S. J. Suryah, Srikanth, Sunil, Jayaram, Samuthirakani</p>
+            <p><b>Music by:</b> Thaman S</p>
+            <a href="game">Read Reviews</a>
+        </div>
+    </div>
+
+</body>
+</html>

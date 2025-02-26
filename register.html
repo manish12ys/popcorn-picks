@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+  
+    <style>
+        body {
+            background: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 80%;
+            max-width: 250px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        input {
+            width: 90%;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background: #FF6347; 
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 0.5rem;
+        }
+
+        button:hover {
+            background: #D04E28; 
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+
+        a {
+            color: #FF6347;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .flash-messages {
+            color: red;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <img src="https://i.ibb.co/W4RYrfRT/tt.jpg" alt="Logo" class="logo">
+        <h2>Register</h2>
+
+       
+        <form action="register" method="POST">
+            <input type="text" name="uname" placeholder="Username" >
+            <input type="email" name="mail" placeholder="Email" >
+            <input type="password" name="passw" placeholder="Password" required>
+            <input type="password" name="confirm_passw" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+       
+        <p>Already have an account? <a href="login">Login</a></p>
+    </div>
+</body>
+</html>

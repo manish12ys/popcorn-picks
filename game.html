@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Changer Movie Review</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+        body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+                background-color: #f4f4f4;
+            }
+            h1 {
+                color: #110707;
+            }
+            h2 {
+                color: black;
+            }
+            .review {
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 20px;
+            }
+            .rating {
+                font-size: 1.2em;
+                color: #ffcc00;
+            }
+            .comment-section {
+                background: #fff;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .comment-form {
+                margin-top: 20px;
+            }
+            .comment-form input, .comment-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .comment-form button {
+                background-color: orange;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .comment-form button:hover {
+                background-color: orange;
+            }
+            .rating {
+                font-weight: bold;
+                color:orange;
+            }
+            .movie-poster{
+                width: 500px;
+                height: auto; 
+            }
+               
+               .nav-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: #333;
+            }
+    
+            .nav-bar form {
+                display: flex;
+                align-items: center;
+            }
+    
+            
+    
+            
+    
+           
+            .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .brand-name {
+        
+            font-weight: bold;
+            color: whhite;
+        }
+            
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    
+    .movie-card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-width: 350px;
+        margin: auto;
+    }
+    
+    .movie-card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; 
+        height: 0;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    
+    
+    .review-link {
+        display: inline-bloc;
+    }
+    .book-now {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    #book-now-btn {
+        background-color: #f06292; 
+        color: white;
+        font-size: 18px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    #book-now-btn:hover {
+        background-color: #d81b60; 
+        transform: scale(1.1); 
+    }
+    
+    #book-now-btn:active {
+        transform: scale(1); 
+    }
+    
+    </style>
+</head>
+<body>
+ 
+    <nav class="nav-bar">
+        <div class="dropdown">
+            <button class="dropdown-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="mainpage">Home</a>
+                <a href="actor">Actors</a>
+                <a href="top_pics">Top Rated</a>
+                
+                <a href="logout">Logout</a>
+            </div>
+           
+        </div>
+        <div style="color: white;">popcorn pictures</div>
+
+
+      
+    </nav>
+    <h1>Game Changer Movie Review</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Movie Poster"/>
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/VIDEO_ID" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    
+        
+    </div>
+    <p><strong>Directed by:</strong> Shankar</p>
+    <p><strong>Starring:</strong> Ram Charan, Kiara Advani, S. J. Suryah, Anjali</p>
+    <p><strong>Release Date:</strong> January 10, 2025</p>
+    <p class="rating"><strong>Rating:</strong> 6.5/10</p>
+
+    <h2>Plot Summary</h2>
+    <p>
+        "Game Changer" is a political drama that delves into the intricacies of corruption and power dynamics. The narrative follows Appanna (Ram Charan), a principled civil servant who becomes entangled in a web of political deceit. As he confronts corrupt officials and navigates the treacherous landscape of governance, Appanna's journey is marked by moral dilemmas and personal sacrifices. The film explores themes of integrity, justice, and the challenges of effecting change within a flawed system.
+    </p>
+
+    <h2>Performance</h2>
+    <p>
+        Ram Charan delivers a compelling performance as Appanna, showcasing a blend of intensity and vulnerability. His portrayal captures the character's internal conflicts and determination to uphold his principles. Kiara Advani, as the female lead, brings grace and depth to her role, complementing Charan's performance. S. J. Suryah stands out with a nuanced depiction of a complex antagonist, adding layers to the narrative. Anjali's performance, though limited in screen time, leaves a lasting impact, contributing significantly to the film's emotional resonance.
+    </p>
+
+    <h2>Cinematography and Direction</h2>
+    <p>
+        Director Shankar employs his signature grandiose style, presenting a visually striking film with elaborate set pieces and meticulous attention to detail. The cinematography captures the contrasting worlds of the political elite and the common populace, enhancing the storytelling. However, while the film's visual appeal is undeniable, some critics have noted that the narrative occasionally succumbs to predictability, with certain plot points echoing familiar tropes from Shankar's previous works.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        "Game Changer" offers a thought-provoking exploration of political corruption, anchored by strong performances and high production values. While it may not break new ground in terms of storytelling, the film succeeds in engaging the audience through its compelling character arcs and moral quandaries. Fans of political dramas and Shankar's directorial style will find "Game Changer" to be a worthwhile cinematic experience.
+    </p>
+
+    <p class="rating"><strong>Final Verdict:</strong> A visually impressive political drama with noteworthy performances, though it treads familiar territory.</p>
+    
+    
+    <div class="book-now">
+        <h2>Book Tickets Now</h2>
+        <button id="book-now-btn">Book Now</button>
+    </div>
+
+    <script>
+      
+        document.getElementById('book-now-btn').addEventListener('click', function() {
+            window.location.href = 'https://in.bookmyshow.com/hyderabad/movies/game-changer/ET00311772';
+        });
+    </script>
+
+</body>
+</html>

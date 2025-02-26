@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popcorn Pictures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #1f2937;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            background-color: #ff5722;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #e64a19;
+        }
+
+        .movies-section {
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .movies-section h2 {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2d3748;
+        }
+
+        .movies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .movie-card {
+            background-color: #f9fafb;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .movie-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            background-color: #1f2937;
+            color: #fff;
+        }
+
+        .about-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .about-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #2d3748;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .about-content img {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .about-content div {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .about-content h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        
+        .credits-box {
+            background-color: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .credits-box img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .credits-box h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #1f2937;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-content img {
+                max-width: 200px;
+                margin-bottom: 20px;
+            }
+
+            .about-content div {
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+
+            .movie-card h3 {
+                font-size: 16px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1>Popcorn Pictures</h1>
+            <div>
+                <a href="login" class="btn-primary">Login</a>
+                <a href="register" class="btn-primary ml-12">Register</a>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4">
+        <section class="movies-section">
+            <h2>Popular Telugu Movies</h2>
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Daaku_Maharaaj_film_poster.jpg" alt="Movie Poster" />
+                    <h3>Daaku Maharaaj</h3>
+                </div>
+                <div class="movie-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Movie Poster" />
+                    <h3>Game Changer</h3>
+                </div>
+                <div class="movie-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Sankranthiki_Vasthunnam_Release_Date%282%29.jpg/330px-Sankranthiki_Vasthunnam_Release_Date%282%29.jpg" alt="Movie Poster" />
+                    <h3>Sankranthiki Vasthunam</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2>created by</h2>
+            <div class="about-content">
+                <img src="https://i.ibb.co/Y4vS7xSy/IMG-20250202-140336.jpg" alt="manish" />
+                <div>
+                    <div class="text-center">
+                        <h3><a href="https://linktr.ee/YepuriMANISH" target="_blank" class="text-orange-500">Manish</a></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section class="credits-box">
+            <h2>Image credits</h2>
+            <img src="https://i.ibb.co/tpzG7yXj/IMG-20250202-135533.jpg" alt="Credit Person" />
+            <h3><a href="https://x.com/9pmcreationz?t=ySU8ZeuaUUoTkykle4gqqg&s=08" target="_blank" class="text-orange-500">Prakash(@9pmcreationz)</a></h3>
+
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by <a href="https://linktr.ee/YepuriMANISH" target="_blank" class="text-orange-500">Manish</a>.</p>
+    </footer>
+</body>
+
+</html>
