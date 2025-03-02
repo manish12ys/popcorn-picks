@@ -23,6 +23,11 @@ class User(db.Model):
 def index():
     return render_template("index.html")
 
+
+@app.route("/requst")
+def requst():
+    return render_template("requst.html")
+    
 @app.route("/mainpage")
 def mainpage():
     return render_template("mainpage.html") 
