@@ -11,7 +11,6 @@ app.secret_key = 'your_secret_key_here'
 db = SQLAlchemy(app)
 
 
-
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
@@ -23,11 +22,6 @@ class User(db.Model):
 def index():
     return render_template("index.html")
 
-
-@app.route("/requst")
-def requst():
-    return render_template("requst.html")
-    
 @app.route("/mainpage")
 def mainpage():
     return render_template("mainpage.html") 
@@ -51,6 +45,18 @@ def dhaku():
 @app.route("/game")
 def game():
     return render_template("game.html")
+
+@app.route("/cap")
+def cap():
+    return render_template("cap.html")
+
+@app.route("/svsc")
+def svsc():
+    return render_template("svsc.html")
+
+@app.route("/requst")
+def requst():
+    return render_template("requst.html")
 
 
 @app.route('/login', methods=["GET", "POST"])
