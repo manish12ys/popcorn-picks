@@ -6,68 +6,69 @@
     <title>Movie Review App</title>
     <link rel="stylesheet" href="style.css">
     <style>
-      
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #333;
-    color: white;
-}
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #333;
+            color: white;
+        }
 
-.menu-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+        .menu-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
 
-form {
-    display: flex;
-}
+        form {
+            display: flex;
+        }
 
-form input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-    margin-right: 5px;
-}
+        form input {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
 
-form button {
-    padding: 0.5rem 1rem;
-    background: #ff9800;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    cursor: pointer;
-}
+        form button {
+            padding: 0.5rem 1rem;
+            background: #ff9800;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
 
-form button:hover {
-    background: #e68900;
-}
-.nav-bar {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                background-color: #333;
-            }
-    
-            .nav-bar form {
-                display: flex;
-                align-items: center;
-            }
-.dropdown {
+        form button:hover {
+            background: #e68900;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .nav-bar form {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown {
             position: relative;
             display: inline-block;
         }
@@ -103,74 +104,68 @@ form button:hover {
             background-color: #ddd;
         }
 
-        
         .dropdown:hover .dropdown-content {
             display: block;
         }
 
+        h1 {
+            margin-top: 1.5rem;
+            color: #333;
+        }
 
-h1 {
-    margin-top: 1.5rem;
-    color: #333;
-}
+        .movies {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 2rem;
+        }
 
+        .movie {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: left;
+        }
 
-.movies {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 2rem;
-}
+        .movie img {
+            width: 100%;
+            border-radius: 8px;
+        }
 
+        .movie h2 {
+            font-size: 1.2rem;
+            color: #222;
+            margin-top: 10px;
+        }
 
-.movie {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: left;
-}
+        .movie p {
+            font-size: 0.9rem;
+            color: #555;
+            margin: 5px 0;
+        }
 
-.movie img {
-    width: 100%;
-    border-radius: 8px;
-}
+        .movie a {
+            display: block;
+            text-align: center;
+            background: #ff9800;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
 
-.movie h2 {
-    font-size: 1.2rem;
-    color: #222;
-    margin-top: 10px;
-}
-
-.movie p {
-    font-size: 0.9rem;
-    color: #555;
-    margin: 5px 0;
-}
-
-
-.movie a {
-    display: block;
-    text-align: center;
-    background: #ff9800;
-    color: white;
-    padding: 0.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.movie a:hover {
-    background: #e68900;
-}
+        .movie a:hover {
+            background: #e68900;
+        }
 
     </style>
 </head>
 <body>
 
-   
     <nav class="nav-bar">
         <div class="dropdown">
             <button class="dropdown-btn">☰ Menu</button>
@@ -178,18 +173,15 @@ h1 {
                 <a href="mainpage">Home</a>
                 <a href="actor">Actors</a>
                 <a href="top_pics">Top Rated</a>
-               <a href="requst">requst a movie</a>
+                <a href="requst">Request a movie</a>
                 <a href="/">Logout</a>
             </div>
         </div>
-    
         <span class="brand">popcorn pictures</span>
-       
     </nav>
 
-    
-    
     <h1>Recent Movies</h1>
+    
     <div class="movies">
         <div class="movie">
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Daaku_Maharaaj_film_poster.jpg" alt="Daaku Maharaaj">
@@ -201,10 +193,8 @@ h1 {
         </div>
 
         <div class="movie">
-            
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Sankranthiki_Vasthunnam_Release_Date%282%29.jpg/330px-Sankranthiki_Vasthunnam_Release_Date%282%29.jpg" alt="Movie Poster"/>
-
-            <h2>Sankranthiki Vasthunam</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Sankranthiki_Vasthunnam_Release_Date%282%29.jpg/330px-Sankranthiki_Vasthunnam_Release_Date%282%29.jpg" alt="Sankranthiki Vasthunnam"/>
+            <h2>Sankranthiki Vasthunnam</h2>
             <p><b>Director:</b> Anil Ravipudi</p>
             <p><b>Starring:</b> Venkatesh, Meenakshi Chaudhary, Aishwarya Rajesh</p>
             <p><b>Music by:</b> Bheems Ceciroleo</p>
@@ -212,15 +202,17 @@ h1 {
         </div>
 
         <div class="movie">
-            <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Movie Poster"/>
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/6a/Game_Changer_Telugu.jpg" alt="Game Changer"/>
             <h2>Game Changer</h2>
             <p><b>Director:</b> S. Shankar</p>
             <p><b>Starring:</b> Ram Charan, Kiara Advani, Anjali, S. J. Suryah, Srikanth, Sunil, Jayaram, Samuthirakani</p>
             <p><b>Music by:</b> Thaman S</p>
             <a href="game">Read Reviews</a>
-            <div class="movie">
+        </div>
+
+        <div class="movie">
             <img src="https://m.media-amazon.com/images/M/MV5BMWJiZDVkODktZDM2ZS00NzE4LTlhOTEtYzRkYmYyODY4ZmQ2XkEyXkFqcGc@._V1_.jpg" alt="SVSC">
-            <h2>Seethamma Vakitlo Sirimalle Chettu (SVSC)</h2>
+            <h2>Seethamma Vakitlo Sirimalle Chettu(SVSC)</h2>
             <p><b>Director:</b> Srikanth Addala</p>
             <p><b>Starring:</b> Mahesh Babu, Venkatesh, Samantha Ruth Prabhu, Anjali</p>
             <p><b>Music by:</b> Songs: Mickey J. Meyer | Background Score: Mani Sharma</p>
@@ -234,7 +226,6 @@ h1 {
             <p><b>Starring:</b> Anthony Mackie, Harrison Ford, Shira Haas</p>
             <p><b>Music by:</b> Laura Karpman</p>
             <a href="cap">Read Reviews</a>
-        </div>
         </div>
     </div>
 
