@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seethamma Vakitlo Sirimalle Chettu Movie Review</title>
+    <link rel="stylesheet" href="style5.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+        }
+
+        .brand-name {
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav-bar form {
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: orange;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .movie-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .movie-poster {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .review {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            font-weight: bold;
+            color: orange;
+        }
+
+        .comment-section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .comment-form input, .comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .comment-form button {
+            background-color: orange;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .comment-form button:hover {
+            background-color: darkorange;
+        }
+
+        .book-now {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #book-now-btn {
+            background-color: #f06292; 
+            color: white;
+            font-size: 18px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        #book-now-btn:hover {
+            background-color: #d81b60; 
+            transform: scale(1.1);
+        }
+
+        #book-now-btn:active {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body>
+ 
+    <nav class="nav-bar">
+        <div class="dropdown">
+            <button class="dropdown-btn">☰ Menu</button>
+            <div class="dropdown-content">
+                <a href="mainpage">Home</a>
+                <a href="actor">Actors</a>
+                <a href="top_pics">Top Rated</a>
+                <a href="requst">Request a movie</a>
+                <a href="/">Logout</a>
+            </div>
+        </div>
+        <div style="color: white;">TFI-BANISA</div>
+    </nav>
+
+    <h1>Seethamma Vakitlo Sirimalle Chettu Movie Review</h1>
+    <img src="https://m.media-amazon.com/images/M/MV5BMWJiZDVkODktZDM2ZS00NzE4LTlhOTEtYzRkYmYyODY4ZmQ2XkEyXkFqcGc@._V1_.jpg" alt="Seethamma Vakitlo Sirimalle Chettu">
+    <div class="video-container">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/VA6d3UViUrk?si=XJVBui7nvx_l0TBl" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <p><strong>Directed by:</strong> Srikanth Addala</p>
+    <p><strong>Starring:</strong> Mahesh Babu, Venkatesh, Samantha Ruth Prabhu, Anjali</p>
+    <p><strong>Release Date:</strong> January 11, 2013</p>
+    <p><strong>Re-Release Date:</strong> March 07, 2025</p>
+    <p class="rating"><strong>Rating:</strong> 9.0/10</p>
+
+    <h2>Plot Summary</h2>
+    <p>
+        "Seethamma Vakitlo Sirimalle Chettu" is a heartwarming family drama that revolves around the relationship between two brothers, Peddodu (Venkatesh) and Chinnodu (Mahesh Babu). Their relationship, intertwined with themes of family, love, and sacrifice, forms the emotional backbone of the story, with a rural backdrop that enhances the film's authenticity.
+    </p>
+
+    <h2>Performance</h2>
+    <p>
+        The performances by Venkatesh and Mahesh Babu are outstanding. Their on-screen chemistry creates a genuine bond that drives the emotional core of the film. Samantha and Anjali also deliver memorable performances, contributing significantly to the film’s charm.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        "Seethamma Vakitlo Sirimalle Chettu" is a beautifully crafted family entertainer. The film's powerful narrative, coupled with its stellar performances, makes it an emotional journey that appeals to audiences of all ages. It is a must-watch for fans of family-oriented films.
+    </p>
+
+    <div class="book-now">
+        <h2>Book Tickets Now</h2>
+        <button id="book-now-btn">Book Now</button>
+    </div>
+
+    <script>
+        document.getElementById('book-now-btn').addEventListener('click', function() {
+            window.location.href = 'https://in.bookmyshow.com/hyderabad/movies/seethamma-vakitlo-sirimalle-chettu/ET00399647';
+        });
+    </script>
+
+</body>
+</html>
